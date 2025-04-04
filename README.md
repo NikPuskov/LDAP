@@ -114,7 +114,7 @@
 
 После успешной установки FreeIPA, проверим, что сервер Kerberos может выдать нам билет:
 
-image2
+![Image alt](https://github.com/NikPuskov/LDAP/blob/main/ldap1.jpg)
 
 - Для удаления полученного билета:
 
@@ -146,11 +146,11 @@ image2
 
 Создадим пользователя otus-user:
 
-image3
+![Image alt](https://github.com/NikPuskov/LDAP/blob/main/ldap2.jpg)
 
 - На хосте client1 или client2 выполним команду:
 
-image4
+![Image alt](https://github.com/NikPuskov/LDAP/blob/main/ldap3.jpg)
 
 - Система запросит у нас пароль и попросит ввести новый пароль.
 
