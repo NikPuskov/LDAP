@@ -62,7 +62,28 @@
 
 - Далее, нам потребуется указать параметры нашего LDAP-сервера, после ввода каждого параметра нажимаем Enter, если нас устраивает параметр, указанный в квадратных скобках, то можно сразу нажимать Enter:
 
-image1
+Do you want to configure integrated DNS (BIND)? [no]: no
+Server host name [ipa.otus.lan]: <Нажимаем Enter>
+Please confirm the domain name [otus.lan]: <Нажимем Enter>
+Please provide a realm name [OTUS.LAN]: <Нажимаем Enter>
+Directory Manager password: <Указываем пароль минимум 8 символов>
+Password (confirm): <Дублируем указанный пароль>
+IPA admin password: <Указываем пароль минимум 8 символов>
+Password (confirm): <Дублируем указанный пароль>
+NetBIOS domain name [OTUS]: <Нажимаем Enter>
+Do you want to configure chrony with NTP server or pool address? [no]: no
+The IPA Master Server will be configured with:
+Hostname:       ipa.otus.lan
+IP address(es): 192.168.57.10
+Domain name:    otus.lan
+Realm name:     OTUS.LAN
+
+The CA will be configured with:
+Subject DN:   CN=Certificate Authority,O=OTUS.LAN
+Subject base: O=OTUS.LAN
+Chaining:     self-signed
+Проверяем параметры, если всё устраивает, то нажимаем yes
+Continue to configure the system with these values? [no]: yes
 
 - Если получаем ошибку `IPv6 stack is enabled in the kernel but there is no interface that has ::1 address assigned.`, нужно активировать ipv6 на lo0 интерфейсе:
 
