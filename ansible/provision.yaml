@@ -68,7 +68,7 @@
         sysctl_set: true
 
     - name: set up ipa
-      shell: echo -e "no\nyes"| ipa-server-install --hostname=ipa.otus.lan --domain=otus.lan --realm=OTUS.LAN --ds-password=otus2024 --admin-password=otus2024 --netbios-name=OTUS --no-ntp
+      shell: echo -e "no\nyes"| ipa-server-install --hostname=ipa.otus.lan --domain=otus.lan --realm=OTUS.LAN --ds-password=otus2025 --admin-password=otus2025 --netbios-name=OTUS --no-ntp
 
 
 - name: set up clients
@@ -91,4 +91,4 @@
         update_cache: true
   
     - name: add host to ipa-server
-      shell: echo -e "yes\nyes" | ipa-client-install --mkhomedir --domain=OTUS.LAN --server=ipa.otus.lan --no-ntp -p admin -w otus2024
+      shell: echo -e "yes\nyes" | ipa-client-install --mkhomedir --domain=OTUS.LAN --server=ipa.otus.lan --no-ntp -p admin -w otus2025
